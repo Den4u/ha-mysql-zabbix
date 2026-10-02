@@ -1,4 +1,9 @@
 ---
+- name: Install MySQL client (for checks HAProxy)
+  ansible.builtin.apt:
+    name: mysql-client
+    state: present
+
 - name: Install the HAProxy package
   ansible.builtin.apt:
     name: haproxy

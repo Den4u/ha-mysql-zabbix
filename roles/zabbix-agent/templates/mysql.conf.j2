@@ -1,6 +1,6 @@
 # MySQL monitoring configuration for Zabbix Agent 2
 
 # Primary MySQL instance (local)
-Plugins.Mysql.Sessions.local.Uri=tcp://{{ zbx_localhost }}:{{ zbx_mysql_port }}
-Plugins.Mysql.Sessions.local.User={{ zbx_monitor_user }}
-Plugins.Mysql.Sessions.local.Password={{ zbx_monitor_user_pass }}
+Plugins.Mysql.Default.Uri=tcp://{{ zbx_localhost }}:{{ zbx_mysql_port }}
+Plugins.Mysql.Default.User={{ zbx_monitor_user }}
+Plugins.Mysql.Default.Password={{ zbx_monitor_user_pass }}

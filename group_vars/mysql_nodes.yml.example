@@ -29,11 +29,15 @@ replica_user: replica
 # --- User for Zabbix MySQL monitoring plugin ---
 zbx_monitor_user: zbx_monitor_username
 
+
+# --- Application user (for read/write via HAProxy) ---
+app_user: app_user
+app_db: testdb
+
 # MySQL host address
 zbx_localhost: localhost
 # MySQL service port
 zbx_mysql_port: 3306
-
 
 # --- HAProxy ---
 # Private IP address of HAProxy node

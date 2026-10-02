@@ -1,3 +1,11 @@
+![Ansible](https://img.shields.io/badge/Ansible-2.20.3-red?style=for-the-badge&logo=ansible)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?style=for-the-badge&logo=mysql&logoColor=white)
+![HAProxy](https://img.shields.io/badge/HAProxy-2.8-green?style=for-the-badge&logo=haproxy)
+![Zabbix](https://img.shields.io/badge/Zabbix-7.4-orange?style=for-the-badge&logo=zabbix)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
 ## Ansible: MySQL (Master-Master Replication) - HAProxy - Zabbix Monitoring<br>
 
 <div align="right">

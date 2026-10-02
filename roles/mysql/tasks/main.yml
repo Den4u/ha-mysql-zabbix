@@ -40,6 +40,15 @@
     state: present
     login_unix_socket: /var/run/mysqld/mysqld.sock
 
+- name: Create app user for read/write access via HAProxy
+  community.mysql.mysql_user:
+    name: "{{ app_user }}"
+    host: "{{ haproxy_host_ip }}"
+    password: "{{ app_user_pass }}"
+    priv: '{{ app_db }}.*:SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,INDEX,ALTER'
+    state: present
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+
 - name: Deploy MySQL configuration from template
   ansible.builtin.template:
     src: templates/mysqld.cnf.j2
