@@ -253,17 +253,20 @@ For security, services are configured to listen only on local interfaces or priv
 
 #### Zabbix Web Interface:
 ```
-ssh -L 8080:localhost:8080 user@zabbix_node_ip
+ssh -L 8080:<prive_IP_zabbix_host>:8080 -N -f user@<public_IP_zabbix_host>
 ```
 After establishing the tunnel, open your browser at: http://127.0.0.1:8080
 
-Default login credentials:
+Login credentials:
   - Username: Admin
   - Password: zabbix
 
+**Security note:** These are Zabbix default credentials. 
+> Change them immediately after the first login in 
+
 #### HAProxy Stats (Admin Panel):
 ```
-ssh -L 8081:localhost:8081 user@haproxy_node_ip
+ssh -L 8081:<prive_IP_haproxy_host>:8081 -N -f user@<public_IP_haproxy_host>
 ```
 After establishing the tunnel, open your browser at: http://127.0.0.1:8081/admin-panel
 
