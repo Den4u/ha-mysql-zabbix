@@ -249,7 +249,7 @@ EOF
 ```
 
 #### 3. Access to management panels:  <br />
-For security, services are configured to listen only on local interfaces or private networks. To access the web interfaces from your local machine, it is recommended to use SSH tunnels.
+For security, services are configured to listen only on local interfaces or private networks. To access the web interfaces use SSH tunnels.
 
 #### Zabbix Web Interface:
 ```
